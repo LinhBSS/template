@@ -235,66 +235,68 @@ const layout1: HtmlLayoutBase = {
 }
 
 const personalInformationLayout: HtmlLayoutBase = {
-    before: `<div class="personalInformation">`,
-    after: '</div>',
-    children: [
-        {
-            before: '<img class="avatar" src="',
-            after: '" alt="avatar">',
-            children: 'image'
-        },
-        {
-            before: '<div class="sectionBody personalContent">',
-            after: '</div>',
-            children: [
-                {
-                    before: `<h1 class="name">`,
-                    after: `</h1>`,
-                    children: 'name'
-                },
-                {
-                    before: `<div class="personalOtherItemContainer">
-            <span class="material-symbols-outlined icon-app">call</span>
-            <p class="personalOtherItem">`,
-                    after: `</p></div>`,
-                    children: 'phoneNumber'
-                },
-                {
-                    before: `<div class="personalOtherItemContainer">
-            <span class="material-symbols-outlined icon-app">mail</span>
-            <p class="personalOtherItem">`,
-                    after: `</p></div>`,
-                    children: 'email'
-                },
-                {
-                    before: `<div class="personalOtherItemContainer">
-            <span class="material-symbols-outlined icon-app">location_on</span>
-            <p class="personalOtherItem">`,
-                    after: `</p></div>`,
-                    children: 'address'
-                },
-                {
-                    before: `<div class="personalOtherItemContainer">
-            <span class="material-symbols-outlined icon-app">calendar_month</span>
-            <p class="personalOtherItem">`,
-                    after: `</p></div>`,
-                    children: 'birthDate'
-                },
-                {
-                    before: `<div class="personalOtherItemContainer">
-            <span class="material-symbols-outlined icon-app">share</span>
-            <p class="personalOtherItem">`,
-                    after: `</p></div>`,
-                    children: 'personalWebsite'
-                }
-            ]
-        },
-        {
-            before: `<div class="personalPosition"><h2 class="position">`,
-            after: `</h2></div>`,
-            children: 'position'
-        }
-    ]
+    children: {
+        before: `<div class="personalInformation">`,
+        after: '</div>',
+        children: [
+            {
+                before: '<img class="avatar" src="',
+                after: '" alt="avatar">',
+                children: 'image'
+            },
+            {
+                before: '<div class="sectionBody personalContent">',
+                after: '</div>',
+                children: [
+                    {
+                        before: `<h1 class="name">`,
+                        after: `</h1>`,
+                        children: 'name'
+                    },
+                    {
+                        before: `<div class="personalOtherItemContainer">
+                <span class="material-symbols-outlined icon-app">call</span>
+                <p class="personalOtherItem">`,
+                        after: `</p></div>`,
+                        children: 'phoneNumber'
+                    },
+                    {
+                        before: `<div class="personalOtherItemContainer">
+                <span class="material-symbols-outlined icon-app">mail</span>
+                <p class="personalOtherItem">`,
+                        after: `</p></div>`,
+                        children: 'email'
+                    },
+                    {
+                        before: `<div class="personalOtherItemContainer">
+                <span class="material-symbols-outlined icon-app">location_on</span>
+                <p class="personalOtherItem">`,
+                        after: `</p></div>`,
+                        children: 'address'
+                    },
+                    {
+                        before: `<div class="personalOtherItemContainer">
+                <span class="material-symbols-outlined icon-app">calendar_month</span>
+                <p class="personalOtherItem">`,
+                        after: `</p></div>`,
+                        children: 'birthDate'
+                    },
+                    {
+                        before: `<div class="personalOtherItemContainer">
+                <span class="material-symbols-outlined icon-app">share</span>
+                <p class="personalOtherItem">`,
+                        after: `</p></div>`,
+                        children: 'personalWebsite'
+                    }
+                ]
+            },
+            {
+                before: `<div class="personalPosition"><h2 class="position">`,
+                after: `</h2></div>`,
+                children: 'position'
+            }
+        ]
+    }
 }
 
 /*
@@ -306,7 +308,26 @@ const personalInformationLayout: HtmlLayoutBase = {
 */
 
 const careerObjectiveLayout: HtmlLayoutBase = {
-    children: ''
+    before: `<div class="careerObjective">
+            <h1 class="sectionHeading">Mục tiêu nghề nghiệp</h1>
+            <div class="sectionBody">`,
+    after: `</div></div>`,
+    children: {
+        before: '<div>',
+        after: '</div>',
+        children: [
+            {
+                before: '<h2>',
+                after: '</h2>',
+                children: 'target'
+            },
+            {
+                before: '<p>',
+                after: '</p>',
+                children: 'description'
+            }
+        ]
+    }
 }
 
 const educationLayout: HtmlLayoutBase = {
