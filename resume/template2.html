@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 1px;
+        }
+
+        body {
+            background-color: rgb(58, 58, 58);
+            margin-top: 20rem;
+        }
+
+        h1 {
+            font-size: 32rem;
+        }
+
+        h2 {
+            font-size: 24rem;
+        }
+
+        h3 {
+            font-size: 18.72rem;
+        }
+
+        h4 {
+            font-size: 16rem;
+        }
+
+        p,
+        div {
+            font-size: 14rem;
+        }
+
+        span {
+            font-size: inherit;
+        }
+
+        p,
+        span,
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #303030;
+        }
+
+        .main {
+            margin: auto;
+            max-width: 796rem;
+            background-color: white;
+            padding: 36rem;
+        }
+
+        .sectionItem {
+            margin-top: 8rem;
+        }
+
+        .sectionHeading {
+            margin-top: 20rem;
+            padding-bottom: 8rem;
+            border-bottom: 2rem solid #786A51;
+            color: #786A51;
+        }
+
+        .sectionBody {
+            margin-left: 20rem;
+            padding-top: 8rem;
+        }
+
+        /* personal infomation */
+
+        .personalInformation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .avatar {
+            object-fit: cover;
+            object-position: 50%;
+            height: 128rem;
+            width: 128rem;
+        }
+
+        .personalContent {
+            flex: 2;
+        }
+
+        .name {
+            color: #786A51;
+            font-weight: bold;
+        }
+
+        .personalOtherItemContainer {
+            display: flex;
+            align-items: center;
+            margin-left: 12rem;
+        }
+
+        .personalOtherItem {
+            margin-left: 12rem;
+            margin-top: 2rem;
+            color: #303030;
+        }
+
+        .personalPosition {
+            padding-left: 20rem;
+            padding-right: 20rem;
+            border-left: 2rem solid #786A51;
+        }
+
+        .position {
+            text-align: center;
+            color: #786A51;
+        }
+
+        .icon-app {
+            color: #303030;
+            font-size: 14rem;
+        }
+
+        /* personal infomation End */
+
+        /* careerObjective */
+
+        /* education */
+        .timeRangeContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        .timeRangeContainer span {
+            margin-right: 8rem;
+            font-size: 20rem;
+            font-weight: bold;
+        }
+
+        .timeRangeIcon {
+            color: #786A51;
+        }
+
+        /* education End*/
+
+        /* workExperience */
+
+        /* skills */
+        .skillContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skillItemContainer {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .levelDecor {
+            display: flex;
+            height: 32rem;
+            width: 32rem;
+            border: 2rem solid #786A51;
+            border-radius: 50%;
+        }
+
+        .skillName {
+            margin-left: 8rem;
+        }
+
+        /* skills End*/
+
+        /* project */
+
+        /* activities */
+
+        /* certifications */
+
+        /* languages */
+
+        /* references */
+        .referencesContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .referenceItem {
+            margin-top: 10rem;
+            width: 33.33%;
+        }
+
+        /* references End */
+
+        /* award */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="personalInformation">
+            <img class="avatar" src="https://smilemedia.vn/wp-content/uploads/2022/09/cach-chup-hinh-the-dep.jpeg"
+                alt="avatar">
+            <div class="sectionBody personalContent">
+                <h1 class="name">My name is</h1>
+
+                <div class="personalOtherItemContainer">
+                    <span class="material-symbols-outlined icon-app">call</span>
+                    <p class="personalOtherItem">phoneNumber</p>
+                </div>
+
+                <div class="personalOtherItemContainer">
+                    <span class="material-symbols-outlined icon-app">mail</span>
+                    <p class="personalOtherItem">email</p>
+                </div>
+
+                <div class="personalOtherItemContainer">
+                    <span class="material-symbols-outlined icon-app">location_on</span>
+                    <p class="personalOtherItem">address</p>
+                </div>
+
+                <div class="personalOtherItemContainer">
+                    <span class="material-symbols-outlined icon-app">calendar_month</span>
+                    <p class="personalOtherItem">birthDate</p>
+                </div>
+
+                <div class="personalOtherItemContainer">
+                    <span class="material-symbols-outlined icon-app">share</span>
+                    <p class="personalOtherItem">personalWebsite</p>
+                </div>
+            </div>
+
+            <div class="personalPosition">
+                <h2 class="position">position</h2>
+            </div>
+        </div>
+
+        <div class="careerObjective">
+            <h1 class="sectionHeading">Mục tiêu nghề nghiệp</h1>
+            <div class="sectionBody">
+                <div>
+                    <h2>target</h2>
+                    <p>I am a highly motivated and detail-oriented professional seeking a challenging role in
+                        [Industry/Field]. With a strong foundation in [specific skills or qualifications], I aim to
+                        contribute to the growth and success of [Company Name or Industry] by utilizing my expertise in
+                        [specific area or skill]. My goal is to continuously learn, adapt, and excel in a dynamic work
+                        environment while delivering measurable results and building a fulfilling career.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="education">
+            <h1 class="sectionHeading">Trình độ học vấn</h1>
+            <div class="sectionBody">
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                        <span> - </span>
+                        <span>to</span>
+                    </div>
+                    <h3>schoolName</h3>
+                    <h4>major</h4>
+                    <p>Description</p>
+                </div>
+
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                        <span> - </span>
+                        <span>to</span>
+                    </div>
+                    <h3>schoolName</h3>
+                    <h4>major</h4>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="workExperience">
+            <h1 class="sectionHeading">Kinh nghiệm</h1>
+            <div class="sectionBody">
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                        <span> - </span>
+                        <span>to</span>
+                    </div>
+                    <h3>companyName</h3>
+                    <h4>position</h4>
+                    <p>responsibility</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h1 class="sectionHeading">Kỹ năng</h1>
+            <div class="sectionBody">
+                <div class="skillContainer">
+                    <div class="skillItemContainer">
+                        <div class="levelDecor"></div>
+                        <p class="skillName">skillName</p>
+                    </div>
+                    <div class="skillItemContainer">
+                        <div class="levelDecor"></div>
+                        <p class="skillName">skillName</p>
+                    </div>
+
+                    <div class="skillItemContainer">
+                        <div class="levelDecor"></div>
+                        <p class="skillName">skillName</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <h1 class="sectionHeading">Dự án</h1>
+            <div class="sectionBody">
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                        <span> - </span>
+                        <span>to</span>
+                    </div>
+                    <h3>projectName</h3>
+                    <p>description</p>
+                </div>
+
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                        <span> - </span>
+                        <span>to</span>
+                    </div>
+                    <h3>projectName</h3>
+                    <p>description</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities">
+            <h1 class="sectionHeading">Hoạt động</h1>
+            <div class="sectionBody">
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                        <span> - </span>
+                        <span>to</span>
+                    </div>
+                    <h3>activitieName</h3>
+                    <h4>organization</h4>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="certifications">
+            <h1 class="sectionHeading">Chứng chỉ</h1>
+            <div class="sectionBody">
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                    </div>
+                    <h3>certificationName</h3>
+                </div>
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>from</span>
+                    </div>
+                    <h3>certificationName</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="languages">
+            <h1 class="sectionHeading">Ngoại ngữ</h1>
+            <div class="sectionBody">
+                <h3>Tiếng Anh</h3>
+                <p>Basic</p>
+            </div>
+
+            <div class="sectionBody">
+                <h3>Tiếng Pháp</h3>
+                <p>Basic</p>
+            </div>
+            <!-- 
+        schema: {
+            languageName
+            description
+        }
+        -->
+        </div>
+
+        <div class="references">
+            <h1 class="sectionHeading">Người tham chiếu</h1>
+            <div class="referencesContainer">
+                <div class="referenceItem">
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">person</span>
+                        <p class="personalOtherItem">name</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">badge</span>
+                        <p class="personalOtherItem">position</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">apartment</span>
+                        <p class="personalOtherItem">organization</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">call</span>
+                        <p class="personalOtherItem">phoneNumber</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">mail</span>
+                        <p class="personalOtherItem">email</p>
+                    </div>
+                </div>
+
+                <div class="referenceItem">
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">person</span>
+                        <p class="personalOtherItem">name</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">badge</span>
+                        <p class="personalOtherItem">position</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">apartment</span>
+                        <p class="personalOtherItem">organization</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">call</span>
+                        <p class="personalOtherItem">phoneNumber</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">mail</span>
+                        <p class="personalOtherItem">email</p>
+                    </div>
+                </div>
+
+                <div class="referenceItem">
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">person</span>
+                        <p class="personalOtherItem">name</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">badge</span>
+                        <p class="personalOtherItem">position</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">apartment</span>
+                        <p class="personalOtherItem">organization</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">call</span>
+                        <p class="personalOtherItem">phoneNumber</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">mail</span>
+                        <p class="personalOtherItem">email</p>
+                    </div>
+                </div>
+
+                <div class="referenceItem">
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">person</span>
+                        <p class="personalOtherItem">name</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">badge</span>
+                        <p class="personalOtherItem">position</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">apartment</span>
+                        <p class="personalOtherItem">organization</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">call</span>
+                        <p class="personalOtherItem">phoneNumber</p>
+                    </div>
+
+                    <div class="personalOtherItemContainer">
+                        <span class="material-symbols-outlined icon-app">mail</span>
+                        <p class="personalOtherItem">email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="award">
+            <h1 class="sectionHeading">Quà tặng</h1>
+            <div class="sectionBody">
+                <div class="sectionItem">
+                    <div class="timeRangeContainer">
+                        <span class="material-symbols-outlined timeRangeIcon">schedule</span>
+                        <span>time</span>
+                    </div>
+                    <h3>awardName</h3>
+                    <p>description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
