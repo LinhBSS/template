@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const fileName = new Date(); // Use current date for testing
+
+        const printToPdf = async () => {
+            setGeneratingPdf(true);
+            try {
+                const printOptions = {
+                    html: createHtmlStringForPdf(),
+                };
+
+                // Generate the PDF file
+                const result = await Print.printToFileAsync(printOptions);
+
+                if (result && result.uri) {
+                    // New file name
+                    const newFileName = `${FileSystem.documentDirectory}Invoice_${readableDate.getTime()}.pdf`;
+
+                    // Rename the PDF file
+                    await FileSystem.moveAsync({
+                        from: result.uri,
+                        to: newFileName,
+                    });
+
+                    // Share the renamed PDF
+                    await Sharing.shareAsync(newFileName, {
+                        mimeType: 'application/pdf',
+                        dialogTitle: 'Share Invoice PDF'
+                    });
+                } else {
+                    console.error('Error generating PDF:', result);
+                }
+            } catch (error) {
+                console.error('Error generating or sharing PDF:', error);
+            } finally {
+                setGeneratingPdf(false);
+            }
+        };
+    </script>
+</body>
+
+</html>

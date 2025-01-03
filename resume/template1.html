@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 1px;
+        }
+
+        .main {
+            margin: 20rem auto;
+            max-width: 796rem;
+            background: linear-gradient(to right, white 0%, white 5%, #597F92 5%, #597F92 40%, white 40%, white 100%);
+        }
+
+        .leftContainer{
+            margin-left: 5%;
+            max-width: 35%;
+        }
+
+        .rightContainer {
+            margin-left: 40%;
+        }
+
+        /* personal infomation */
+        .personalInformation {
+            padding-top: 32rem;
+        }
+
+        .avatar {
+            height: 180rem;
+            width: 180rem;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 50%;
+        }
+
+
+        .block1 {
+            display: flex;
+        }
+
+        .info_block1 {
+            flex: 4;
+            border: 4rem solid rgb(255, 255, 255);
+            border-left: none;
+            padding: 4rem;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #2C5F77;
+            border-top-right-radius: 100rem;
+            border-bottom-right-radius: 100rem;
+        }
+
+        .infor_block2 {
+            flex: 6;
+            background-color: #2B6077;
+            border-top-left-radius: 100rem;
+            border-bottom-left-radius: 100rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .name {
+            font-size: 20rem;
+            margin: 0;
+        }
+
+        .position {
+            font-size: 16rem;
+            margin: 0;
+        }
+
+        /* personal infomation End */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="personalInformation">
+            <div class="block1">
+                <div class="info_block1">
+                    <img class="avatar"
+                        src="https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/12/hinh-thien-nhien-3d-002.jpg"
+                        alt="">
+                </div>
+                <div class="infor_block2">
+                    <div>
+                        <p class="name">JOHN SMITH</p>
+                        <p class="position">YOUR PROFESSION HERE</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+        schema: {
+            image: {
+                label: "Image",
+            },
+            name: {
+                label: "Name",
+            },
+            position: {
+                label: "Position",
+            },
+            phoneNumber: {
+                label: "Phone number",
+            },
+            email: {
+                label: "Email",
+            },
+            address: {
+                label: "Address",
+                multiline: true
+            },
+            birthDate: {
+                label: "Birth date",
+                type: 'date'
+            },
+            personalWebsite: {
+                label: "Personal website",
+            }
+        }
+-->
+        </div>
+
+        <div class="careerObjective">
+            <!-- 
+        schema: {
+            target: {
+                label: "Target",
+            },
+            description: {
+                label: "Description"
+            }
+        }
+-->
+        </div>
+
+        <div class="education">
+            <!-- 
+        schema: {
+            schoolName: {
+                label: "School Name"
+            },
+            major: {
+                label: "Major",
+            },
+            description: {
+                label: "Detailed Description",
+                multiline: true
+            },
+            timeRange: {
+                type: 'date-range',
+            }
+        }
+-->
+        </div>
+
+        <div class="workExperience">
+            <!-- 
+        schema: {
+            companyName: {
+                label: "Company Name"
+            },
+            position: {
+                label: "Position",
+            },
+            responsibility: {
+                label: "Responsibility",
+                multiline: true
+            },
+            timeRange: {
+                type: 'date-range',
+            }
+        }
+-->
+        </div>
+
+        <div class="skills">
+            <!-- 
+        schema: {
+            skillName: {
+                label: "Skill"
+            }
+        }
+-->
+        </div>
+
+        <div class="project">
+            <!-- 
+      schema: {
+            projectName: {
+                label: "Project Name"
+            },
+            description: {
+                label: "Detailed Description",
+                multiline: true
+            },
+            timeRange: {
+                type: 'date-range',
+            }
+        }  
+-->
+        </div>
+
+        <div class="activities">
+            <!-- 
+       schema: {
+            activitieName: {
+                label: "Activitie Name"
+            },
+            organization: {
+                label: "Organization",
+            },
+            description: {
+                label: "Detailed Description",
+                multiline: true
+            },
+            timeRange: {
+                type: 'date-range',
+            }
+        } 
+-->
+        </div>
+
+        <div class="certifications">
+            <!-- 
+        schema: {
+            certificationName: {
+                label: "Certification"
+            },
+            time: {
+                type: 'date',
+            }
+        }
+-->
+        </div>
+
+        <div class="languages">
+            <!-- 
+        schema: {
+            languageName: {
+                label: "Language Name"
+            },
+            description: {
+                label: "Detailed Description",
+                multiline: true
+            },
+        }
+        -->
+        </div>
+
+        <div class="references">
+            <!-- 
+        name: {
+                label: "Name"
+            },
+            position: {
+                label: "Position"
+            },
+            organization: {
+                label: "Organization",
+            },
+            phoneNumber: {
+                label: "Phone number"
+            },
+            email: {
+                label: "Email"
+            }        
+        -->
+        </div>
+
+        <div class="award">
+            <!-- 
+        awardName: {
+            label: "Award Name"
+            },
+            description: {
+                label: "Detailed Description",
+                multiline: true
+            },
+            time: {
+                type: 'date',
+            }
+         -->
+        </div>
+    </div>
+</body>
+
+</html>
