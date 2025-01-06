@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // npm install assemblyai
+
+        import { AssemblyAI } from 'assemblyai'
+
+        const client = new AssemblyAI({
+            apiKey: "8c30430d0ecb4ea8aaa53f492e564f27"
+        })
+
+        const audioUrl =
+            'https://assembly.ai/sports_injuries.mp3'
+
+        const config = {
+            audio_url: audioUrl
+        }
+
+        const run = async () => {
+            const transcript = await client.transcripts.transcribe(config)
+            console.log(transcript.text)
+        }
+
+        run()
+    </script>
+</body>
+
+</html>
